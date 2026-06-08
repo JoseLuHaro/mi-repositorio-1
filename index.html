@@ -3,93 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página personal de José Luis</title>
+  <title>BiciUrbana - Cicletería</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- HEADER: Encabezado principal de la página -->
   <header>
-    <h1>Página personal de José Luis</h1>
+    <h1>BiciUrbana</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- NAV: Barra de navegación con enlaces internos -->
-  <nav>
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#sobre-mi">Sobre mí</a></li>
-      <li><a href="#hobbies">Hobbies</a></li>
-      <li><a href="#metas">Metas</a></li>
-    </ul>
-  </nav>
-
-  <!-- MAIN: Contenido principal de la página -->
   <main>
-
-    <!-- Sección Inicio -->
     <section id="inicio">
-      <h2>Inicio</h2>
-      <p>Bienvenido a mi página personal. Mi nombre es <strong>José Luis Rodrigo Haro Vásquez</strong> y soy estudiante de Analista Programador en INACAP.</p>
-      <img src="imagenes/perfil.jpg" alt="Foto de perfil de José Luis">
+      <h2>Tu movilidad urbana comienza aquí</h2>
+      <p>Bienvenido a BiciUrbana, tu tienda de confianza para bicicletas de calidad y servicios profesionales. Nos especializamos en venta, reparación y arriendo de bicicletas para facilitarte la movilidad en la ciudad.</p>
+      <a href="#contacto" class="boton">Agendar revisión</a>
     </section>
 
-    <!-- Sección Sobre mí -->
-    <section id="sobre-mi">
-      <h2>Sobre mí</h2>
-      <p>Soy originario de <strong>Coyhaique, Chile</strong>. Actualmente trabajo y estudio simultáneamente en mi carrera de Analista Programador. Me apasiona aprender nuevas tecnologías, practicar deporte y siempre busco mejorar mis habilidades profesionales.</p>
+    <section id="servicios">
+      <h2>Nuestros Servicios</h2>
+      <article>
+        <h3>Taller de reparación</h3>
+        <p>Servicio de reparación y mantenimiento profesional para tu bicicleta. Revisamos frenos, cambios, cadena y más.</p>
+      </article>
+      <article>
+        <h3>Venta de bicicletas</h3>
+        <p>Amplio catálogo de bicicletas de diferentes modelos y marcas. Encontramos la bicicleta perfecta para ti.</p>
+      </article>
+      <article>
+        <h3>Arriendo diario</h3>
+        <p>Arrienda una bicicleta por día y disfruta de la ciudad. Tarifas económicas y equipo de calidad garantizado.</p>
+      </article>
     </section>
 
-    <!-- Sección Hobbies -->
-    <section id="hobbies">
-      <h2>Hobbies</h2>
-      <p>En mi tiempo libre disfruto realizando las siguientes actividades:</p>
-      <ul>
-        <li>Fútbol</li>
-        <li>Videojuegos</li>
-        <li>Ver series</li>
-        <li>Aprender programación</li>
-      </ul>
+    <section id="nosotros">
+      <h2>Nosotros</h2>
+      <p>BiciUrbana lleva más de 8 años de experiencia promoviendo la movilidad sostenible en la ciudad. Somos una empresa comprometida con el medio ambiente y la salud de nuestros clientes.</p>
     </section>
 
-    <!-- Sección Metas -->
-    <section id="metas">
-      <h2>Metas</h2>
-      <p>Mis objetivos principales son:</p>
-      <ol>
-        <li>Terminar mi carrera</li>
-        <li>Aprender bien a programar</li>
-        <li>Conseguir un buen trabajo</li>
-        <li>Mejorar mi calidad de vida</li>
-      </ol>
-    </section>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
 
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="servicio">Tipo de servicio:</label>
+        <input type="text" id="servicio" name="servicio" required>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
   </main>
 
-  <!-- ASIDE: Información complementaria -->
-  <aside>
-    <h3>Dato adicional</h3>
-    <p>Actualmente estoy aprendiendo HTML, CSS, Git y GitHub.</p>
-  </aside>
-
-  <!-- FOOTER: Pie de página -->
   <footer>
-    <p>&copy; 2026 José Luis Rodrigo Haro Vásquez</p>
+    <p>© 2026 BiciUrbana · Todos los derechos reservados</p>
   </footer>
-
-  <!-- 
-  COMENTARIOS EXPLICATIVOS SOBRE LOS ELEMENTOS SEMÁNTICOS:
-  
-  - HEADER: Contiene el encabezado principal (h1) de la página. Define la identidad del sitio.
-  
-  - NAV: Proporciona la navegación principal con enlaces internos (anclas). Facilita el acceso a las diferentes secciones.
-  
-  - MAIN: Envuelve el contenido principal y único de la página. No debe haber múltiples elementos main.
-  
-  - SECTION: Agrupa contenido relacionado temáticamente. Cada sección tiene un h2 único y un ID para permitir navegación interna.
-  
-  - ASIDE: Contiene información complementaria o secundaria que no es central al contenido principal.
-  
-  - FOOTER: Representa el pie de página con información de copyright y cierre del sitio web.
-  -->
-
 </body>
 </html>
